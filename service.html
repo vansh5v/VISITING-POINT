@@ -1,0 +1,156 @@
+<!-- service.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Services</title>
+    <link rel="stylesheet" href="main1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+       
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .services .box-container .box{
+    flex: 1 30rem;
+    padding:2rem;
+    text-align: center;
+  }
+  
+  .services .box-container .box i{
+    font-size: 5rem; 
+  }
+  
+  .services .box-container .box h3{
+    font-size: 2.5rem;
+    color:#333;
+  }
+  
+  .services .box-container .box img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  .services .box-container .box p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+  }
+
+    body{
+         background-color:lightsalmon; 
+        font-family:  'Playfair Display', serif;
+    }
+    
+    #our{
+        text-align: center;
+        font-size: 40px;
+        color:black;
+        padding: 10px;
+    }
+    .navbar-brand {
+	    color: #4e2804;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+}
+
+@media (max-width: 710px){
+
+.navbar-brand {
+    font-size: 15px;
+    top:20px;
+    left:15px;
+}
+}
+</style>
+</head>
+
+<body>
+    <p class="navbar-brand" href="#">Visiting-points</p><br><br>
+    <h1 id="our">Services...</h1>   
+    <section class="services" id="services">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./download (3).jfif" height="200px" width="350px" alt="">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <img src="./images.jfif" height="200px" width="350px" alt="">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <img src="./img-1.png" height="200px" width="350px" alt="">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <img src="./download (2).jfif" width="350px" height="200px" alt="">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <img src="./images (1).jfif" height="200px" width="350px" alt="">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <img src="./mountains-under-mist-morning-amazing-260nw-1725825019.webp" width="350px" height="200px" alt="">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+    </div>
+         
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+  <h1 class="heading" align="center"> Client's reviews </h1>
+
+  <div class="swiper review-slider">
+
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+              <div class="user">
+                  <img src="./pic-1.png" alt="">
+                  <div class="info">
+                      <h3>Elward deo</h3>
+                      <span>designer</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="swiper-slide slide">
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+              <div class="user">
+                  <img src="./pic-2.png" alt="">
+                  <div class="info">
+                      <h3>Elward deo</h3>
+                      <span>designer</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</section> 
+</body>
+</html>

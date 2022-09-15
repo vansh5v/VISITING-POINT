@@ -1,0 +1,192 @@
+<!-- sign.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main1.css">
+    <title>Registration</title>
+    <style>
+        
+  body{ 
+     padding: 0;
+     margin: 0;
+     font-family: cursive;
+     font-weight: 500;
+  } 
+.section-small {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10;
+  }
+ 
+  p {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color:white;
+  }
+  h2{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  a{
+    text-decoration: none;
+    color:var(#233975)
+  }
+  a:hover{
+    text-decoration:underline;
+  }
+  .small{
+    font-size: 85%;
+    text-align: center;
+  }
+  .screen{
+    display: flex;
+    flex-direction: column;
+  }
+  .left{
+    height: 200px;
+    background:url(./featured_122.webp);
+    background-size: cover;
+    text-align: center;
+  }
+  .right{
+    background-color: burlywood;
+  }
+  .left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .right .copy{
+    color: black;
+    text-align: center;
+  }
+  .right .copy p{
+    margin: 1.5em 0;
+    font-size: 0.975rem;
+  }
+  .right form{
+    width: 280px;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 0.6em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  }
+  label{
+    display: block;
+    font-size: 0.75rem;
+  }
+  .input-container.password{
+    position: relative;    
+  }
+  .signup-btn{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: rgb(23, 23, 106);
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+  .signup-btn:hover{
+    background: #2c4893;
+    cursor: pointer;
+  }
+/* about site */
+.section-header{
+    color: red;
+    font-size:2rem;
+}
+.section-small {
+    background-color: burlywood;
+    max-width: 100%;
+  }
+  p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+   hr {
+    width: 100%;
+    border: 0.5px solid rgba(9, 8, 8, 0.935);
+  }   
+</style>
+</head>
+
+     <body>
+        <div class="screen">
+            <div class="left">
+                <section class="copy">
+                    <h1>Explore your Creativity</h1><br>
+                </section>
+            </div>
+            <div class="right">
+                <form> 
+                    <section class="copy">
+                        <h2>Sign up</h2>
+                        <div class="login-container">
+                            <p>Already have an account? <a href="#">Log In</a></p>
+                        </div>
+                    </section>
+                    <div class="input-container name">
+                        <label for="fname">Full Name</label>
+                        <input id="fname" name="fname" type="text">
+                    </div>
+                    <div class="input-container email">
+                        <label for="email">Email</label>
+                        <input id="email" name="email"type="email">                        
+                    </div>
+                    <div class="input-container password">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" placeholder="Must be atleast 7 characters"type="password">                        
+                    </div>
+                    <!-- <button class="signup-btn" type="submit">Sign up</button> -->
+                    <input type="submit" class="signup-btn" value="Sign up" onclick="myFunction()">
+                    <script>
+                       function myFunction(){
+                        alert("You are registered");
+                       }
+                      </script>
+                    <section class="copy-legal">
+                        <p><span class="small">By continuing, you agree to accept our <br> <a href="#">Privacy Policy</a>
+                            &amp; <a href="#">Terms of service</a></span></p>
+                    </section><br>
+                </form>
+            </div>
+        </div>  
+     <hr/>
+     <section class="section section-small">
+        <h2 class="section-header" align="center" >About our site</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Id temporibus dolor a 
+        sed quidem quos, officiis quis ducimus 
+        dolore similique voluptas autem ad quam et
+         illum deserunt. Sed, voluptatibus omnis!
+        </p>
+        <p class="mb-0">
+         Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Numquam adipisci quisquam aliquid? Modi et 
+          accusantium doloremque possimus non distinctio ad,
+          ratione hic iste dolorem eligendi sunt? Facilis
+          neque corrupti sint.
+        </p>
+      </section> 
+
+</body>
+</html>
